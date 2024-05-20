@@ -89,7 +89,7 @@ function buildMenu () {
                 tmp[map[i][sub]] = `## ${title}`
             }
             tmp[map[i][sub]] += `
-${idx}. [${map[i].title}](../${map[i][sub]}/${map[i].file})`;
+${idx}. [${map[i].title}](./${map[i].file})`;
         }
         idx++;
     }
@@ -104,7 +104,7 @@ ${idx}. [${map[i].title}](../${map[i][sub]}/${map[i].file})`;
     for (let i in tmp) {
         const title = staticMap[i] || i;
         str += `
-${idx}. [${title}](./${i})`;
+${idx}. [${title}](./${i}/index.md)`;
         idx++;
     }
     fs.writeFileSync(path.join(rootPath, './docs/example', 'index.md'), str, 'utf8')
