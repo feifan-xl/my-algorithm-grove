@@ -1,6 +1,8 @@
 const fs = require('fs')
 
 const path = require('path'); 
+
+const static = require('./static.js');
 const rootPath = path.join(__dirname, '../');
 
 const ORI = path.join(rootPath, './src')
@@ -11,11 +13,11 @@ fs.rmSync(path.join(rootPath, './docs/example'), {
     recursive: true
 })
 
-const copyList = ['docs']
-const transList = ['leetcode']
+const copyList = static.copyList;
+const transList = static.transList;
+const staticMap = static.map;
 
 const dir = fs.readdirSync(ORI, 'utf8')
-const staticMap = require('../map.json');
 const map = {};
 
 dir.forEach(i => {
