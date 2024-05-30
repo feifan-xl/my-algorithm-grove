@@ -55,6 +55,7 @@ function copyFile(filePath) {
     const file = fs.readFileSync(filePath, 'utf8')
     const a = file.split('---');
     const tmp = {};
+    if (!a[1]) return;
     (a[1].split('\n') || []).forEach(i => {
         if (i) {
             const tags = i.split('=');
