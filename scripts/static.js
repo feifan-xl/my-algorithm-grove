@@ -5,7 +5,13 @@ const map = {
   "sets": "集合",
   "hot": "热门",
   "array": "数组",
-  "hashmap": "哈希表"
+  "hashmap": "哈希表",
+  "string": "字符串",
+  "backtracking": "回溯",
+  "linkedlist": "链表",
+  "twopointer": "双指针",
+  "greedy": "贪心",
+  "dp": "动态规划"
 };
 
 const copyList = ['docs']
