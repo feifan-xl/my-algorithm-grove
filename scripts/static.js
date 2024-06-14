@@ -11,7 +11,11 @@ const map = {
   "linkedlist": "链表",
   "twopointer": "双指针",
   "greedy": "贪心",
-  "dp": "动态规划"
+  "dp": "动态规划",
+  "binarytree": "二叉树",
+  "binary": "二分",
+  "slidingwindow": "滑动窗口",
+  "dfs": "深度优先搜索"
 };
 
 const copyList = ['docs']
